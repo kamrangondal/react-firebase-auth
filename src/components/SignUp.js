@@ -7,7 +7,7 @@ import MyImage0 from './svgs/pass-optimized.svg';
 import MyImage1 from './svgs/open-eye-optimized.svg';
 import MyImage2 from './svgs/close-eye-optimized.svg';
 
-const regex = /@packagex\.com$/;
+const regex = /@visionx\.com$/;
 
 const SignUp = () => {
 
@@ -47,7 +47,7 @@ const SignUp = () => {
 
     console.log(value, regex.test(value))
     if (!regex.test(value)) {
-      setError('Please enter a valid email address.');
+      setError('It needs to ends with @visionx.com');
     } else {
       setError('');
     }
