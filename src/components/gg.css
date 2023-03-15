@@ -1,0 +1,32 @@
+.input-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon-left, .icon-right{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.icon-left{
+    left: 10px;
+}
+
+.icon-right{
+    right: 10px;
+}
+
+input{
+    padding: 10px 30px 10px 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+}
+
+input:focus{
+    outline: none;
+    border-color: blueviolet;
+}

@@ -1,0 +1,121 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+  height: 100vh;
+  background: rgb(255, 145, 0);
+  background: radial-gradient(circle, rgba(255, 145, 0, 1) 0%, rgba(68, 205, 178, 1) 46%, rgba(92, 105, 255, 1) 100%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+.flex-items {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  border-radius: 30px;
+  /* border: 3px solid rgb(0, 0, 0); */
+  /* border: solid $b rgba(#000, .2); */
+  overflow: auto;
+}
+
+.flex-items:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(255, 0, 0, 0.801);
+}
+
+.beauty {
+  background-color: rgba(255, 0, 0, 0.523);
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  /* border: 2px solid #4CAF50; */
+  border: 2px solid rgba(255, 0, 0, 0.308);
+}
+
+.button1:hover {
+  background-color: rgba(255, 0, 0, 0.308);
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-left,
+.icon-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.icon-left {
+  left: 10px;
+}
+
+.icon-right {
+  right: 10px;
+}
+
+input {
+  padding: 10px 30px 10px 40px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #555;
+}
+
+input:focus {
+  outline: none;
+  border-color: blueviolet;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
