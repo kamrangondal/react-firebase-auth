@@ -84,7 +84,7 @@ const SignUp = () => {
             </span>
           </div>
           <br />
-          <button className={error==='' ? "button button1 " : "button  disabled"} disabled={error==='' ? false : true} type="submit">Submit</button>
+          <button className={error==='' && email !== '' ? "button button1 " : "button disabled"}  disabled={error==='' && email !== '' ? false : true} type="submit">Submit</button>
         </form>
       </div>
     </div>
