@@ -1,3 +1,5 @@
+#Add a config.js file in the src folder, in config.js, add your firebase configuration. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
