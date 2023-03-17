@@ -6,7 +6,7 @@
 .pnp.js
 
 # .gitignore
-./config.js
+config.js
 
 # testing
 /coverage
